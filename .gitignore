@@ -1,36 +1,48 @@
-# Ignora arquivos e pastas do Composer
+# ...existing code...
+# Ignora dependências do Composer
 /vendor/
-/composer.lock
+
+# Ignora arquivos de configuração de ambiente
+.env
 
 # Ignora arquivos de log
 *.log
 
-# Ignora arquivos de upload
-/uploads/
-
-# Ignora arquivos temporários e de cache
-*.tmp
-*.temp
+# Ignora arquivos de cache e temporários
 *.cache
+*.tmp
 
 # Ignora arquivos do sistema operacional
 .DS_Store
 Thumbs.db
 
-# Ignora arquivos de configuração do VSCode
+# Ignora arquivos de IDEs
 .vscode/
+.idea/
 
-# Ignora arquivos de banco de dados
-*.sqlite
-*.db
+# Ignora arquivos de build e minificados
+/public/assets/css/*.map
+/public/assets/js/*.map
+
+# Ignora arquivos de upload temporários
+public/assets/img/uploads/
+
+# Ignora arquivos de configuração do Apache
+public/.htaccess
 
 # Ignora arquivos de backup
-*~
+*.bak
+*.old
 
-# Ignora arquivos de ambiente
-.env
-.env.*
+# Ignora arquivos do PHPUnit
+phpunit.xml
+phpunit.xml.dist
 
-# Ignora arquivos de implantação e documentação temporária
-/docs/implantacao/*.sql
-/docs/implantacao/*.txt
+# Ignora arquivos do Composer
+composer.lock
+
+# Ignora arquivos de documentação gerados
+docs/
+
+# Ignora arquivos de cache do PHP
+*.php~
