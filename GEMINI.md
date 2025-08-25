@@ -12,7 +12,7 @@ Este é um projeto de um aplicativo monolítico em PHP 8.2 que utiliza o padrão
 
 A estrutura do projeto segue o padrão MVC, com os seguintes diretórios principais:
 
-- `src/controller`: Contém os controladores, que são responsáveis por receber as requisições do usuário, interagir com os modelos e selecionar a view apropriada para renderização.
+- `src/controllers`: Contém os controladores, que são responsáveis por receber as requisições do usuário, interagir com os modelos e selecionar a view apropriada para renderização.
 - `src/models`: Contém os modelos, que são responsáveis por interagir com o banco de dados e conter a lógica de negócios da aplicação.
 - `src/views`: Contém as views, que são responsáveis por apresentar os dados ao usuário.
 - `routes`: Contém as definições de rotas da aplicação.
@@ -55,7 +55,7 @@ As views devem ser o mais simples possível, contendo apenas a lógica de aprese
 
 Ao criar um novo módulo, siga a seguinte estrutura:
 
-1.  **Crie o controlador:** Crie um novo arquivo em `src/controller/nome_do_modulo/NomeDoModuloController.php`.
+1.  **Crie o controlador:** Crie um novo arquivo em `src/controllers/nome_do_modulo/NomeDoModuloController.php`.
 2.  **Crie o modelo:** Crie um novo arquivo em `src/models/nome_do_modulo/NomeDoModuloModel.php`.
 3.  **Crie as views:** Crie os arquivos de view necessários em `src/views/nome_do_modulo/`.
 4.  **Adicione as rotas:** Adicione as rotas para o novo módulo no arquivo `routes/routes.php`.
