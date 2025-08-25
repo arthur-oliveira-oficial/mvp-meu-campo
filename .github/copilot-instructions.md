@@ -33,6 +33,8 @@ Ao gerar código para este projeto, siga as seguintes convenções:
 
 ### Estilo de Código
 
+- **Idioma:** Todo o código-fonte, incluindo comentários, nomes de variáveis, classes e métodos, deve ser escrito em português do Brasil (pt-br).
+- **PHPDoc:** Todas as classes, métodos e funções devem ter blocos de comentários PHPDoc que documentem seu propósito, parâmetros e valores de retorno.
 - Utilize o estilo de código PSR-12.
 - Adicione comentários para explicar lógicas complexas, mas evite comentários óbvios.
 - Mantenha a separação de responsabilidades entre as camadas do MVC.
