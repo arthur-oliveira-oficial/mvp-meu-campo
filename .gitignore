@@ -41,8 +41,5 @@ phpunit.xml.dist
 # Ignora arquivos do Composer
 composer.lock
 
-# Ignora arquivos de documentação gerados
-docs/
-
 # Ignora arquivos de cache do PHP
 *.php~
