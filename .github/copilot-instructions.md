@@ -20,6 +20,12 @@
 - Rotas devem ser registradas em `routes/routes.php`.
 - Configurações sensíveis (ex: credenciais) ficam em `config/config_database.php`.
 
+## Regras Obrigatórias de Segurança e Boas Práticas
+
+- **Model:** Usar PDO com Prepared Statements para TODAS as queries, sem exceção.
+- **Controller:** Validar e sanitizar todos os dados de entrada (`$_GET`, `$_POST`, etc.) antes de passá-los para o Model.
+- **View:** Escapar toda e qualquer saída de dados com `htmlspecialchars()` para prevenir XSS.
+
 ## Idioma do Código
 Todo o código fonte do projeto (nomes de variáveis, funções, comentários e textos) deve ser escrito em português brasileiro (pt-br).
 
