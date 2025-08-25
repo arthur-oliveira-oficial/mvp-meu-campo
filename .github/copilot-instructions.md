@@ -90,3 +90,24 @@ Comentários devem ser claros e objetivos, explicando regras de negócio e decis
 
 ---
 
+<<<<<<< HEAD
+=======
+
+---
+
+## Tabela de Vulnerabilidades e Soluções em PHP
+
+| Vulnerabilidade                      | Solução Principal                   | Funções/Conceitos Chave em PHP                                      |
+|--------------------------------------|-------------------------------------|---------------------------------------------------------------------|
+| SQL Injection                        | Prepared Statements                 | PDO::prepare(), PDOStatement::execute(), mysqli_prepare()           |
+| Cross-Site Scripting (XSS)           | Output Escaping                     | htmlspecialchars()                                                  |
+| Cross-Site Request Forgery (CSRF)    | Tokens Anti-CSRF                    | random_bytes(), $_SESSION, hash_equals()                            |
+| Falhas de Autenticação               | Hashing Seguro de Senhas            | password_hash(), password_verify()                                  |
+| Gerenciamento de Sessão              | Práticas Seguras de Sessão          | session_regenerate_id(), HTTPS, HttpOnly cookies                    |
+| Controle de Acesso (IDOR)            | Verificação de Permissões no Servidor| Checagens de $_SESSION['user_id'] ou roles em cada request          |
+| Upload de Arquivos Maliciosos        | Validação Rigorosa de Arquivos      | Validar extensão, tipo MIME, renomear arquivos, armazenar fora      |
+
+---
+
+> Atualize este documento conforme novas convenções ou fluxos forem adotados.
+>>>>>>> 67e6327 (Adiciona tabela de vulnerabilidades e soluções em PHP ao documento de instruções do Copilot)
