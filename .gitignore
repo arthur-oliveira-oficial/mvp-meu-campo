@@ -1,0 +1,36 @@
+# Ignora arquivos e pastas do Composer
+/vendor/
+/composer.lock
+
+# Ignora arquivos de log
+*.log
+
+# Ignora arquivos de upload
+/uploads/
+
+# Ignora arquivos temporários e de cache
+*.tmp
+*.temp
+*.cache
+
+# Ignora arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos de configuração do VSCode
+.vscode/
+
+# Ignora arquivos de banco de dados
+*.sqlite
+*.db
+
+# Ignora arquivos de backup
+*~
+
+# Ignora arquivos de ambiente
+.env
+.env.*
+
+# Ignora arquivos de implantação e documentação temporária
+/docs/implantacao/*.sql
+/docs/implantacao/*.txt
