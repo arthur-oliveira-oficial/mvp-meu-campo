@@ -1,12 +1,12 @@
 <?php
 
-namespace Src\Models\Usuarios;
+namespace Src\Models\Auth;
 
 require_once __DIR__ . '/../BaseModel.php';
 
 use Src\Models\BaseModel;
 
-class UsuariosModel extends BaseModel
+class AuthModel extends BaseModel
 {
     protected $table = 'usuarios';
 
