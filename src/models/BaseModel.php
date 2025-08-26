@@ -5,7 +5,7 @@ namespace Src\Models;
 use PDO;
 use PDOException;
 
-require_once __DIR__ . '/../../config/config_database.php';
+use Config\Database;
 
 abstract class BaseModel
 {
@@ -14,17 +14,7 @@ abstract class BaseModel
 
     public function __construct()
     {
-        try {
-            $this->db = new PDO(
-                'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8',
-                DB_USER,
-                DB_PASSWORD
-            );
-            $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $e) {
-            // Em um ambiente de produção, você pode querer logar o erro em vez de exibi-lo
-            die("Erro de conexão com o banco de dados: " . $e->getMessage());
-        }
+        $this->db = Database::getInstancia();
     }
 
     /**
