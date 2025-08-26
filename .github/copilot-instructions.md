@@ -37,6 +37,13 @@ Este documento descreve as convenções e pontos importantes para gerar/alterar 
 6. Uploads e recursos:
    - Validar tipos MIME, tamanho e permissões antes de salvar arquivos (ex.: fluxo em [`Src\Controllers\EstudosSolo\EstudosSoloController`](src/controllers/estudos_solo/estudos_solo_controller.php) com suporte ao modelo [`Src\Models\EstudosSolo\EstudosSoloModel`](src/models/estudos_solo/estudos_solo_models.php)).
 
+7. Recursos frontend obrigatórios:
+    - Todas as views devem carregar os seguintes recursos estáticos para garantir consistência de estilos e comportamentos:
+       - `assets/bootstrap/bootstrap.bundle.min.js` (Bootstrap bundle)
+       - `assets/alpine/alpine.js` (Alpine.js)
+       - `public/assets/css/global.css` (estilos globais do projeto)
+    - Inclua esses arquivos nas views principais ou no template base (ex.: `views/components/header` ou `views/layout.php`) de forma que estejam disponíveis para todas as páginas.
+
 ## Como adicionar um novo módulo (resumo)
 1. Criar modelo em `src/models/nome_modulo/NomeModuloModel.php` estendendo [`Src\Models\BaseModel`](src/models/BaseModel.php).
 2. Criar controlador em `src/controllers/nome_modulo/NomeModuloController.php`.
